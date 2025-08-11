@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PumpLens - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            margin-bottom: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .last-updated {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 500;
+            color: #e0e0e0;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #4a90e2;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(74, 144, 226, 0.3);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #ffffff;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            font-weight: 500;
+        }
+
+        h4 {
+            color: #e0e0e0;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+
+        .highlight-box {
+            background: rgba(74, 144, 226, 0.1);
+            border: 1px solid rgba(74, 144, 226, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .highlight-box h4 {
+            color: #4a90e2;
+            margin-top: 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .warning-box h4 {
+            color: #ffc107;
+            margin-top: 0;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-info h4 {
+            color: #4a90e2;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .toc {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            color: #4a90e2;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #4a90e2;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            border-radius: 16px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: white;
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.3);
+        }
+
+        .effective-date {
+            font-style: italic;
+            color: #a0a0a0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">⛽</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">PumpLens - Smart Fuel Tracking</p>
+        </header>
+
+        <div class="last-updated">
+            <strong>Last Updated:</strong> January 2025
+        </div>
+
+        <div class="effective-date">
+            This Privacy Policy is effective as of January 1, 2025
+        </div>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#information-collection">2. Information We Collect</a></li>
+                <li><a href="#data-usage">3. How We Use Your Information</a></li>
+                <li><a href="#data-storage">4. Data Storage and Security</a></li>
+                <li><a href="#data-sharing">5. Information Sharing and Disclosure</a></li>
+                <li><a href="#user-rights">6. Your Rights and Choices</a></li>
+                <li><a href="#children-privacy">7. Children's Privacy</a></li>
+                <li><a href="#international-users">8. International Users</a></li>
+                <li><a href="#third-party-services">9. Third-Party Services</a></li>
+                <li><a href="#data-retention">10. Data Retention</a></li>
+                <li><a href="#policy-changes">11. Changes to This Privacy Policy</a></li>
+                <li><a href="#contact">12. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <section class="section" id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Welcome to PumpLens ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application PumpLens (the "App"). This policy applies to all users of our App and describes our practices regarding the collection, use, and disclosure of personal information.</p>
+            
+            <p>PumpLens is designed with privacy as a fundamental principle. We are committed to protecting your personal information and being transparent about our data practices. By using our App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+            <div class="highlight-box">
+                <h4>Key Privacy Principles</h4>
+                <ul>
+                    <li><strong>Local Storage First:</strong> Your fuel tracking data is stored locally on your device</li>
+                    <li><strong>No Unnecessary Collection:</strong> We only collect information essential for app functionality</li>
+                    <li><strong>User Control:</strong> You maintain full control over your data</li>
+                    <li><strong>Transparency:</strong> We are clear about what data we collect and why</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="information-collection">
+            <h2>2. Information We Collect</h2>
+            
+            <h3>2.1 Personal Information You Provide</h3>
+            <p>We collect information you voluntarily provide when using the App:</p>
+            <ul>
+                <li><strong>Fuel Entry Data:</strong> Gas station names, fuel amounts, prices, dates, odometer readings, and related notes you enter</li>
+                <li><strong>Vehicle Information:</strong> Car make, model, year, and custom names you assign to your vehicles</li>
+                <li><strong>Receipt Images:</strong> Photos of gas receipts you choose to capture for OCR processing (processed locally)</li>
+                <li><strong>User Preferences:</strong> App settings, notification preferences, and customization choices</li>
+                <li><strong>Support Communications:</strong> Information you provide when contacting customer support</li>
+            </ul>
+
+            <h3>2.2 Automatically Collected Information</h3>
+            <p>We may automatically collect certain technical information:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system version, app version, and device identifiers</li>
+                <li><strong>Usage Analytics:</strong> App crashes, performance metrics, and feature usage statistics (anonymized)</li>
+                <li><strong>Purchase Information:</strong> In-app purchase receipts and subscription status (through Apple's StoreKit)</li>
+            </ul>
+
+            <h3>2.3 Camera and Photo Access</h3>
+            <p>The App requests camera access for:</p>
+            <ul>
+                <li>Taking photos of gas receipts for OCR processing</li>
+                <li>Capturing odometer readings</li>
+                <li>All image processing occurs locally on your device</li>
+                <li>Images are stored locally and never transmitted to external servers</li>
+            </ul>
+
+            <div class="warning-box">
+                <h4>Important Note About OCR Processing</h4>
+                <p>When you use our OCR (Optical Character Recognition) feature, receipt images are processed entirely on your device using Apple's Vision framework. No images or extracted text are sent to external servers or third-party OCR services.</p>
+            </div>
+        </section>
+
+        <section class="section" id="data-usage">
+            <h2>3. How We Use Your Information</h2>
+            
+            <h3>3.1 Primary Uses</h3>
+            <p>We use your information for the following purposes:</p>
+            <ul>
+                <li><strong>Core App Functionality:</strong> Storing and organizing your fuel tracking data</li>
+                <li><strong>Analytics and Insights:</strong> Calculating fuel efficiency, costs, and trends</li>
+                <li><strong>Data Export:</strong> Generating CSV files for your personal use</li>
+                <li><strong>Reminders:</strong> Sending local notifications based on your preferences</li>
+                <li><strong>Multi-Vehicle Support:</strong> Managing separate tracking for different vehicles</li>
+            </ul>
+
+            <h3>3.2 App Improvement</h3>
+            <ul>
+                <li><strong>Performance Optimization:</strong> Using anonymized usage data to improve app performance</li>
+                <li><strong>Feature Development:</strong> Understanding which features are most valuable to users</li>
+                <li><strong>Bug Fixes:</strong> Identifying and resolving technical issues</li>
+                <li><strong>User Experience:</strong> Enhancing the overall app experience</li>
+            </ul>
+
+            <h3>3.3 Customer Support</h3>
+            <ul>
+                <li>Responding to your inquiries and support requests</li>
+                <li>Troubleshooting technical issues</li>
+                <li>Providing assistance with app features</li>
+                <li>Processing subscription and billing inquiries</li>
+            </ul>
+        </section>
+
+        <section class="section" id="data-storage">
+            <h2>4. Data Storage and Security</h2>
+            
+            <h3>4.1 Local Storage</h3>
+            <p>PumpLens prioritizes local data storage:</p>
+            <ul>
+                <li><strong>On-Device Storage:</strong> All fuel tracking data is stored locally on your device using iOS's secure storage mechanisms</li>
+                <li><strong>iOS Data Protection:</strong> Your data is protected by iOS's built-in encryption when your device is locked</li>
+                <li><strong>App Sandbox:</strong> Data is isolated within the app's secure sandbox environment</li>
+                <li><strong>No Cloud Storage:</strong> We do not store your fuel tracking data on external servers</li>
+            </ul>
+
+            <h3>4.2 Security Measures</h3>
+            <p>We implement industry-standard security practices:</p>
+            <ul>
+                <li><strong>Data Encryption:</strong> Sensitive data is encrypted using iOS's built-in encryption</li>
+                <li><strong>Secure Transmission:</strong> Any network communications use HTTPS/TLS encryption</li>
+                <li><strong>Access Controls:</strong> Strict access controls for any backend services</li>
+                <li><strong>Regular Security Reviews:</strong> Ongoing security assessments and updates</li>
+            </ul>
+
+            <h3>4.3 Data Backup and Sync</h3>
+            <ul>
+                <li><strong>iCloud Backup:</strong> Your data may be included in iOS device backups to iCloud (controlled by your iOS settings)</li>
+                <li><strong>Device Transfer:</strong> Data transfers between devices occur through iOS's standard backup/restore process</li>
+                <li><strong>Manual Export:</strong> You can export your data to CSV format for personal backup</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>Data Security Commitment</h4>
+                <p>We are committed to protecting your information using appropriate technical and organizational measures. However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee absolute security.</p>
+            </div>
+        </section>
+
+        <section class="section" id="data-sharing">
+            <h2>5. Information Sharing and Disclosure</h2>
+            
+            <h3>5.1 General Policy</h3>
+            <p>We do not sell, trade, or otherwise transfer your personal information to third parties. Your fuel tracking data remains private and is not shared with external parties.</p>
+
+            <h3>5.2 Limited Exceptions</h3>
+            <p>We may disclose your information only in the following limited circumstances:</p>
+            <ul>
+                <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
+                <li><strong>Safety Concerns:</strong> To protect the safety of users or the public</li>
+                <li><strong>Rights Protection:</strong> To protect our rights, property, or safety</li>
+                <li><strong>Business Transfer:</strong> In connection with a merger, acquisition, or sale of assets (with user notification)</li>
+            </ul>
+
+            <h3>5.3 Service Providers</h3>
+            <p>We may work with trusted third-party service providers for:</p>
+            <ul>
+                <li><strong>App Analytics:</strong> Anonymized usage statistics (no personal data)</li>
+                <li><strong>Crash Reporting:</strong> Technical error reporting (no personal data)</li>
+                <li><strong>Payment Processing:</strong> Apple's App Store for in-app purchases</li>
+                <li><strong>Customer Support:</strong> Email services for support communications</li>
+            </ul>
+
+            <div class="warning-box">
+                <h4>Third-Party Service Providers</h4>
+                <p>Any third-party service providers we work with are contractually obligated to protect your information and use it only for the specific services they provide to us. They are prohibited from using your information for their own purposes.</p>
+            </div>
+        </section>
+
+        <section class="section" id="user-rights">
+            <h2>6. Your Rights and Choices</h2>
+            
+            <h3>6.1 Data Access and Control</h3>
+            <p>You have the following rights regarding your data:</p>
+            <ul>
+                <li><strong>Access:</strong> View all your fuel tracking data within the app</li>
+                <li><strong>Modification:</strong> Edit or update your fuel entries and vehicle information</li>
+                <li><strong>Deletion:</strong> Delete individual entries or all data from the app</li>
+                <li><strong>Export:</strong> Export your data to CSV format (premium feature)</li>
+            </ul>
+
+            <h3>6.2 App Permissions</h3>
+            <p>You can control app permissions through iOS Settings:</p>
+            <ul>
+                <li><strong>Camera Access:</strong> Required for receipt scanning and photo capture</li>
+                <li><strong>Notifications:</strong> Control reminder notifications</li>
+                <li><strong>Photo Library:</strong> Access to save or import images (if applicable)</li>
+            </ul>
+
+            <h3>6.3 Marketing Communications</h3>
+            <ul>
+                <li>We do not send promotional emails or marketing communications</li>
+                <li>App Store notifications are controlled by your iOS settings</li>
+                <li>In-app notifications can be disabled in the app settings</li>
+            </ul>
+
+            <h3>6.4 Data Deletion</h3>
+            <p>To completely remove your data:</p>
+            <ol>
+                <li>Delete the app from your device</li>
+                <li>This will permanently remove all locally stored fuel tracking data</li>
+                <li>Contact us if you need assistance with data deletion</li>
+            </ol>
+        </section>
+
+        <section class="section" id="children-privacy">
+            <h2>7. Children's Privacy</h2>
+            
+            <p>PumpLens is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+
+            <h3>7.1 Age Verification</h3>
+            <ul>
+                <li>The app is rated 4+ on the App Store but is designed for users who can legally drive</li>
+                <li>We rely on Apple's App Store age verification processes</li>
+                <li>Users must be at least 13 years old to create accounts or use the app</li>
+            </ul>
+
+            <h3>7.2 Parental Rights</h3>
+            <p>If we discover that we have collected personal information from a child under 13:</p>
+            <ul>
+                <li>We will delete that information from our records</li>
+                <li>We will not use the information for any purpose</li>
+                <li>We will not disclose the information to third parties</li>
+            </ul>
+        </section>
+
+        <section class="section" id="international-users">
+            <h2>8. International Users</h2>
+            
+            <h3>8.1 Data Processing Location</h3>
+            <p>PumpLens processes data locally on your device. Any minimal data that may be transmitted (such as crash reports or analytics) may be processed in various locations, including:</p>
+            <ul>
+                <li>United States</li>
+                <li>Other countries where our service providers operate</li>
+            </ul>
+
+            <h3>8.2 Legal Compliance</h3>
+            <p>We comply with applicable data protection laws, including:</p>
+            <ul>
+                <li><strong>GDPR:</strong> European Union General Data Protection Regulation</li>
+                <li><strong>CCPA:</strong> California Consumer Privacy Act</li>
+                <li><strong>PIPEDA:</strong> Personal Information Protection and Electronic Documents Act (Canada)</li>
+                <li><strong>Other local privacy laws</strong> as applicable</li>
+            </ul>
+
+            <h3>8.3 EU Users' Rights</h3>
+            <p>If you are in the European Union, you have additional rights under GDPR:</p>
+            <ul>
+                <li>Right to portability of your data</li>
+                <li>Right to rectification of inaccurate data</li>
+                <li>Right to erasure ("right to be forgotten")</li>
+                <li>Right to restrict processing</li>
+                <li>Right to object to processing</li>
+                <li>Right to lodge a complaint with supervisory authorities</li>
+            </ul>
+        </section>
+
+        <section class="section" id="third-party-services">
+            <h2>9. Third-Party Services</h2>
+            
+            <h3>9.1 Apple Services</h3>
+            <p>PumpLens integrates with Apple services:</p>
+            <ul>
+                <li><strong>App Store:</strong> For app distribution and in-app purchases</li>
+                <li><strong>StoreKit:</strong> For subscription management</li>
+                <li><strong>Vision Framework:</strong> For local OCR processing</li>
+                <li><strong>Core Data:</strong> For local data storage</li>
+            </ul>
+
+            <h3>9.2 Analytics Services</h3>
+            <p>We may use anonymized analytics services to improve the app:</p>
+            <ul>
+                <li>No personally identifiable information is shared</li>
+                <li>Data is aggregated and anonymized</li>
+                <li>Used only for app improvement purposes</li>
+            </ul>
+
+            <h3>9.3 Third-Party Privacy Policies</h3>
+            <p>Please review the privacy policies of third-party services:</p>
+            <ul>
+                <li><a href="https://www.apple.com/privacy/" style="color: #4a90e2;">Apple Privacy Policy</a></li>
+                <li>Any other third-party services will be clearly disclosed</li>
+            </ul>
+        </section>
+
+        <section class="section" id="data-retention">
+            <h2>10. Data Retention</h2>
+            
+            <h3>10.1 Local Data Retention</h3>
+            <p>Your fuel tracking data is retained locally on your device:</p>
+            <ul>
+                <li>Data persists until you delete it or uninstall the app</li>
+                <li>No automatic expiration of fuel entries</li>
+                <li>You control how long to keep your data</li>
+            </ul>
+
+            <h3>10.2 Support Communications</h3>
+            <ul>
+                <li>Support emails are retained for 2 years for reference</li>
+                <li>You can request deletion of support communications</li>
+                <li>Essential business records may be retained longer as required by law</li>
+            </ul>
+
+            <h3>10.3 Analytics Data</h3>
+            <ul>
+                <li>Anonymized analytics data may be retained for up to 2 years</li>
+                <li>Used for app improvement and trend analysis</li>
+                <li>Cannot be linked back to individual users</li>
+            </ul>
+        </section>
+
+        <section class="section" id="policy-changes">
+            <h2>11. Changes to This Privacy Policy</h2>
+            
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
+
+            <h3>11.1 Notification of Changes</h3>
+            <ul>
+                <li><strong>App Updates:</strong> Privacy policy changes will be communicated through app updates</li>
+                <li><strong>In-App Notifications:</strong> Significant changes will be highlighted in the app</li>
+                <li><strong>Website Updates:</strong> The latest version will always be available on our website</li>
+                <li><strong>Email Notifications:</strong> Major changes may be communicated via email if we have your contact information</li>
+            </ul>
+
+            <h3>11.2 Effective Date</h3>
+            <ul>
+                <li>Changes become effective when posted</li>
+                <li>Continued use of the app after changes constitutes acceptance</li>
+                <li>If you disagree with changes, please discontinue use of the app</li>
+            </ul>
+
+            <h3>11.3 Material Changes</h3>
+            <p>For material changes to this Privacy Policy, we will:</p>
+            <ul>
+                <li>Provide at least 30 days' notice before the changes take effect</li>
+                <li>Clearly explain what has changed</li>
+                <li>Give you the opportunity to review and understand the changes</li>
+            </ul>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>12. Contact Information</h2>
+            
+            <div class="contact-info">
+                <h4>Questions About This Privacy Policy?</h4>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                
+                <p><strong>Email:</strong> <a href="mailto:mahmudkandawala7@gmail.com">mahmudkandawala7@gmail.com</a></p>
+                <p><strong>Subject Line:</strong> Privacy Policy Inquiry - PumpLens</p>
+                
+                <p style="margin-top: 20px; font-size: 0.9em; color: #a0a0a0;">
+                    We will respond to your privacy-related inquiries within 30 days of receipt.
+                </p>
+            </div>
+
+            <h3>12.1 Data Protection Officer</h3>
+            <p>For EU users, our data protection contact is:</p>
+            <ul>
+                <li><strong>Email:</strong> mahmudkandawala7@gmail.com</li>
+                <li><strong>Subject:</strong> GDPR/Data Protection Inquiry</li>
+            </ul>
+
+            <h3>12.2 Regulatory Complaints</h3>
+            <p>You have the right to lodge a complaint with your local data protection authority if you believe we have violated your privacy rights.</p>
+        </section>
+
+        <div class="section">
+            <h2>Legal Disclaimer</h2>
+            <p><strong>This Privacy Policy constitutes a legally binding agreement between you and PumpLens. By using the app, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with any part of this Privacy Policy, you must not use the app.</strong></p>
+            
+            <p style="margin-top: 20px; font-style: italic; color: #a0a0a0;">
+                This Privacy Policy was last updated on January 1, 2025, and is effective immediately for all users of PumpLens.
+            </p>
+        </div>
+
+        <footer style="text-align: center; padding: 40px 0; color: #a0a0a0; font-size: 0.9em; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px;">
+            <p>&copy; 2025 PumpLens. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="support.html" style="color: #4a90e2; text-decoration: none;">Support</a> | 
+                <a href="#" style="color: #4a90e2; text-decoration: none;">Terms of Service</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for table of contents links
+        document.querySelectorAll('.toc a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight current section in table of contents
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const tocLinks = document.querySelectorAll('.toc a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.style.color = '#e0e0e0';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = '#4a90e2';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
