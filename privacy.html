@@ -519,14 +519,15 @@
                     <li><a href="#information-collection">2. Information We Collect</a></li>
                     <li><a href="#data-usage">3. How We Use Your Information</a></li>
                     <li><a href="#data-storage">4. Data Storage and Security</a></li>
-                    <li><a href="#data-sharing">5. Information Sharing and Disclosure</a></li>
-                    <li><a href="#user-rights">6. Your Rights and Choices</a></li>
-                    <li><a href="#children-privacy">7. Children's Privacy</a></li>
-                    <li><a href="#international-users">8. International Users</a></li>
-                    <li><a href="#third-party-services">9. Third-Party Services</a></li>
-                    <li><a href="#data-retention">10. Data Retention</a></li>
-                    <li><a href="#policy-changes">11. Changes to This Privacy Policy</a></li>
-                    <li><a href="#contact">12. Contact Information</a></li>
+                    <li><a href="#icloud-sync">5. iCloud Sync and Cloud Storage</a></li>
+                    <li><a href="#data-sharing">6. Information Sharing and Disclosure</a></li>
+                    <li><a href="#user-rights">7. Your Rights and Choices</a></li>
+                    <li><a href="#children-privacy">8. Children's Privacy</a></li>
+                    <li><a href="#international-users">9. International Users</a></li>
+                    <li><a href="#third-party-services">10. Third-Party Services</a></li>
+                    <li><a href="#data-retention">11. Data Retention</a></li>
+                    <li><a href="#policy-changes">12. Changes to This Privacy Policy</a></li>
+                    <li><a href="#contact">13. Contact Information</a></li>
                 </ul>
             </div>
 
@@ -553,9 +554,10 @@
                 <h3>2.1 Personal Information You Provide</h3>
                 <p>We collect information you voluntarily provide when using the App:</p>
                 <ul>
-                    <li><strong>Fuel Entry Data:</strong> Gas station names, fuel amounts, prices, dates, odometer readings, and related notes you enter</li>
+                    <li><strong>Fuel Entry Data:</strong> Gas station names, fuel amounts, prices, custom entry dates, odometer readings, and related notes you enter</li>
                     <li><strong>Vehicle Information:</strong> Car make, model, year, and custom names you assign to your vehicles</li>
                     <li><strong>Receipt Images:</strong> Photos of gas receipts you choose to capture for OCR processing (processed locally)</li>
+                    <li><strong>Date Information:</strong> Custom dates you select for fuel entries, including past dates for forgotten entries</li>
                     <li><strong>User Preferences:</strong> App settings, notification preferences, and customization choices</li>
                     <li><strong>Support Communications:</strong> Information you provide when contacting customer support</li>
                 </ul>
@@ -579,7 +581,7 @@
 
                 <div class="warning-box">
                     <h4>Important Note About OCR Processing</h4>
-                    <p>When you use our OCR (Optical Character Recognition) feature, receipt images are processed entirely on your device using Apple's Vision framework. No images or extracted text are sent to external servers or third-party OCR services.</p>
+                    <p>When you use our OCR (Optical Character Recognition) feature, receipt images are processed entirely on your device using Apple's Vision framework. The app automatically extracts dates, amounts, and gallons from receipts when possible. No images or extracted text are sent to external servers or third-party OCR services.</p>
                 </div>
             </section>
 
@@ -622,7 +624,7 @@
                     <li><strong>On-Device Storage:</strong> All fuel tracking data is stored locally on your device using iOS's secure storage mechanisms</li>
                     <li><strong>iOS Data Protection:</strong> Your data is protected by iOS's built-in encryption when your device is locked</li>
                     <li><strong>App Sandbox:</strong> Data is isolated within the app's secure sandbox environment</li>
-                    <li><strong>No Cloud Storage:</strong> We do not store your fuel tracking data on external servers</li>
+                    <li><strong>Optional Cloud Storage:</strong> Pro subscribers can optionally enable iCloud sync for backup and cross-device access</li>
                 </ul>
 
                 <h3>4.2 Security Measures</h3>
@@ -640,13 +642,65 @@
                 </div>
             </section>
 
-            <section class="section fade-in" id="data-sharing">
-                <h2>5. Information Sharing and Disclosure</h2>
+            <section class="section fade-in" id="icloud-sync">
+                <h2>5. iCloud Sync and Cloud Storage</h2>
                 
-                <h3>5.1 General Policy</h3>
+                <h3>5.1 Pro Subscription Feature</h3>
+                <p>For Pro subscribers, PumpLens offers optional iCloud sync and backup functionality:</p>
+                <ul>
+                    <li><strong>Automatic Backup:</strong> Your fuel tracking data is automatically backed up to your personal iCloud account</li>
+                    <li><strong>Cross-Device Sync:</strong> Access your data across multiple iOS devices signed into the same iCloud account</li>
+                    <li><strong>Data Protection:</strong> Prevents data loss when switching devices or reinstalling the app</li>
+                    <li><strong>User Control:</strong> You can enable or disable iCloud sync at any time in app settings</li>
+                </ul>
+
+                <h3>5.2 iCloud Data Storage</h3>
+                <p>When iCloud sync is enabled:</p>
+                <ul>
+                    <li><strong>Apple's CloudKit:</strong> We use Apple's CloudKit framework for secure cloud storage</li>
+                    <li><strong>Your iCloud Account:</strong> Data is stored in your personal iCloud storage space, not on our servers</li>
+                    <li><strong>End-to-End Encryption:</strong> Apple handles all encryption and security for iCloud data</li>
+                    <li><strong>Apple's Privacy Policy:</strong> iCloud data is subject to Apple's privacy policies and terms</li>
+                    <li><strong>No Third-Party Access:</strong> We cannot access your iCloud data - only your devices can</li>
+                </ul>
+
+                <h3>5.3 Data Synchronization</h3>
+                <p>The sync process works as follows:</p>
+                <ul>
+                    <li><strong>Automatic Sync:</strong> Changes are automatically synced when you have an internet connection</li>
+                    <li><strong>Conflict Resolution:</strong> The app uses timestamps to resolve conflicts between devices</li>
+                    <li><strong>Offline Functionality:</strong> The app continues to work offline; sync resumes when online</li>
+                    <li><strong>Selective Sync:</strong> Only your fuel entries and vehicle data are synced to iCloud</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h4>iCloud Privacy and Security</h4>
+                    <p>When you enable iCloud sync, your data is stored in your personal iCloud account using Apple's CloudKit service. This means:</p>
+                    <ul>
+                        <li>Your data is encrypted by Apple during transmission and storage</li>
+                        <li>We cannot access or view your iCloud data</li>
+                        <li>Your data remains under your control through your Apple ID</li>
+                        <li>You can disable iCloud sync at any time to stop cloud synchronization</li>
+                    </ul>
+                </div>
+
+                <h3>5.4 iCloud Requirements</h3>
+                <p>To use iCloud sync, you need:</p>
+                <ul>
+                    <li>A Pro subscription to PumpLens</li>
+                    <li>An Apple ID with iCloud enabled</li>
+                    <li>Sufficient iCloud storage space</li>
+                    <li>Internet connection for initial sync and ongoing updates</li>
+                </ul>
+            </section>
+
+            <section class="section fade-in" id="data-sharing">
+                <h2>6. Information Sharing and Disclosure</h2>
+                
+                <h3>6.1 General Policy</h3>
                 <p>We do not sell, trade, or otherwise transfer your personal information to third parties. Your fuel tracking data remains private and is not shared with external parties.</p>
 
-                <h3>5.2 Limited Exceptions</h3>
+                <h3>6.2 Limited Exceptions</h3>
                 <p>We may disclose your information only in the following limited circumstances:</p>
                 <ul>
                     <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
@@ -657,9 +711,9 @@
             </section>
 
             <section class="section fade-in" id="user-rights">
-                <h2>6. Your Rights and Choices</h2>
+                <h2>7. Your Rights and Choices</h2>
                 
-                <h3>6.1 Data Access and Control</h3>
+                <h3>7.1 Data Access and Control</h3>
                 <p>You have the following rights regarding your data:</p>
                 <ul>
                     <li><strong>Access:</strong> View all your fuel tracking data within the app</li>
@@ -668,21 +722,23 @@
                     <li><strong>Export:</strong> Export your data to CSV format (premium feature)</li>
                 </ul>
 
-                <h3>6.2 Data Deletion</h3>
+                <h3>7.2 Data Deletion</h3>
                 <p>To completely remove your data:</p>
                 <ol>
+                    <li>If using iCloud sync, first disable it in app settings</li>
                     <li>Delete the app from your device</li>
                     <li>This will permanently remove all locally stored fuel tracking data</li>
+                    <li>For complete iCloud data removal, you may need to manage this through your iCloud settings</li>
                     <li>Contact us if you need assistance with data deletion</li>
                 </ol>
             </section>
 
             <section class="section fade-in" id="children-privacy">
-                <h2>7. Children's Privacy</h2>
+                <h2>8. Children's Privacy</h2>
                 
                 <p>PumpLens is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
 
-                <h3>7.1 Parental Rights</h3>
+                <h3>8.1 Parental Rights</h3>
                 <p>If we discover that we have collected personal information from a child under 13:</p>
                 <ul>
                     <li>We will delete that information from our records</li>
@@ -692,9 +748,9 @@
             </section>
 
             <section class="section fade-in" id="international-users">
-                <h2>8. International Users</h2>
+                <h2>9. International Users</h2>
                 
-                <h3>8.1 Legal Compliance</h3>
+                <h3>9.1 Legal Compliance</h3>
                 <p>We comply with applicable data protection laws, including:</p>
                 <ul>
                     <li><strong>GDPR:</strong> European Union General Data Protection Regulation</li>
@@ -703,7 +759,7 @@
                     <li><strong>Other local privacy laws</strong> as applicable</li>
                 </ul>
 
-                <h3>8.2 EU Users' Rights</h3>
+                <h3>9.2 EU Users' Rights</h3>
                 <p>If you are in the European Union, you have additional rights under GDPR:</p>
                 <ul>
                     <li>Right to portability of your data</li>
@@ -716,22 +772,23 @@
             </section>
 
             <section class="section fade-in" id="third-party-services">
-                <h2>9. Third-Party Services</h2>
+                <h2>10. Third-Party Services</h2>
                 
-                <h3>9.1 Apple Services</h3>
+                <h3>10.1 Apple Services</h3>
                 <p>PumpLens integrates with Apple services:</p>
                 <ul>
                     <li><strong>App Store:</strong> For app distribution and in-app purchases</li>
                     <li><strong>StoreKit:</strong> For subscription management</li>
                     <li><strong>Vision Framework:</strong> For local OCR processing</li>
+                    <li><strong>CloudKit:</strong> For optional iCloud sync (Pro subscribers only)</li>
                     <li><strong>Core Data:</strong> For local data storage</li>
                 </ul>
             </section>
 
             <section class="section fade-in" id="data-retention">
-                <h2>10. Data Retention</h2>
+                <h2>11. Data Retention</h2>
                 
-                <h3>10.1 Local Data Retention</h3>
+                <h3>11.1 Local Data Retention</h3>
                 <p>Your fuel tracking data is retained locally on your device:</p>
                 <ul>
                     <li>Data persists until you delete it or uninstall the app</li>
@@ -739,7 +796,16 @@
                     <li>You control how long to keep your data</li>
                 </ul>
 
-                <h3>10.2 Support Communications</h3>
+                <h3>11.2 iCloud Data Retention</h3>
+                <p>For users with iCloud sync enabled:</p>
+                <ul>
+                    <li>Data is retained in your personal iCloud account according to Apple's policies</li>
+                    <li>You control iCloud data retention through your Apple ID and iCloud settings</li>
+                    <li>Disabling iCloud sync stops new data from being uploaded but doesn't automatically delete existing iCloud data</li>
+                    <li>Refer to Apple's iCloud documentation for managing your iCloud data retention</li>
+                </ul>
+
+                <h3>11.3 Support Communications</h3>
                 <ul>
                     <li>Support emails are retained for 2 years for reference</li>
                     <li>You can request deletion of support communications</li>
@@ -748,18 +814,18 @@
             </section>
 
             <section class="section fade-in" id="policy-changes">
-                <h2>11. Changes to This Privacy Policy</h2>
+                <h2>12. Changes to This Privacy Policy</h2>
                 
                 <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
 
-                <h3>11.1 Notification of Changes</h3>
+                <h3>12.1 Notification of Changes</h3>
                 <ul>
                     <li><strong>App Updates:</strong> Privacy policy changes will be communicated through app updates</li>
                     <li><strong>In-App Notifications:</strong> Significant changes will be highlighted in the app</li>
                     <li><strong>Website Updates:</strong> The latest version will always be available on our website</li>
                 </ul>
 
-                <h3>11.2 Material Changes</h3>
+                <h3>12.2 Material Changes</h3>
                 <p>For material changes to this Privacy Policy, we will:</p>
                 <ul>
                     <li>Provide at least 30 days' notice before the changes take effect</li>
@@ -769,7 +835,7 @@
             </section>
 
             <section class="section fade-in" id="contact">
-                <h2>12. Contact Information</h2>
+                <h2>13. Contact Information</h2>
                 
                 <div class="contact-info">
                     <h4>Questions About This Privacy Policy?</h4>
@@ -783,7 +849,7 @@
                     </p>
                 </div>
 
-                <h3>12.1 Data Protection Officer</h3>
+                <h3>13.1 Data Protection Officer</h3>
                 <p>For EU users, our data protection contact is:</p>
                 <ul>
                     <li><strong>Email:</strong> mahmudkandawala7@gmail.com</li>
@@ -796,7 +862,7 @@
                 <p><strong>This Privacy Policy constitutes a legally binding agreement between you and PumpLens. By using the app, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with any part of this Privacy Policy, you must not use the app.</strong></p>
                 
                 <p style="margin-top: 25px; font-style: italic; color: #5a6c7d;">
-                    This Privacy Policy was last updated on January 1, 2025, and is effective immediately for all users of PumpLens.
+                    This Privacy Policy was last updated on January 15, 2025, and is effective immediately for all users of PumpLens.
                 </p>
             </div>
         </div>
